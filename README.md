@@ -21,15 +21,15 @@ To push the package use command when in `ExBCSL/bin/Debug`:
 
 # Methods
 ## BRead.cs
-`string getString(string msg)`
+`string getString(string msg)`  
     Gets a string from the command line
 
-`int getInt(string msg)`
+`int getInt(string msg)`  
     Gets an int from the command line
 
 ## BArrays.cs
-`string[] FillArr(string[] a0, string[] a1, int limit)`
+`string[] FillArr(string[] a0, string[] a1, int limit)`  
     Fills one array with another, up to a set limit. Takes an input of an array in order to get size. Arrays must be strings
 
-`int[] BBubbleSort(int[] a)`
+`int[] BBubbleSort(int[] a)`  
     Runs a basic bubble sort. Orders from highest to lowest
