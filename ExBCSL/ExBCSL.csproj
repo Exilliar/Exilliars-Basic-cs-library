@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>ExBCSL</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Exilliar</Authors>
      <description>A basic set of c# methods that can be used on simple c# projects</description>
   </PropertyGroup>
