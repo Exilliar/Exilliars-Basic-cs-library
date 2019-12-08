@@ -17,3 +17,6 @@ To make sure that the latest version is install use command `dotnet restore` in 
 
 To push the package use command when in `ExBCSL/bin/Debug`:  
 `dotnet nuget push ExBCSL.[version].nupkg -k [API key] -s https://api.nuget.org/v3/index.json`
+
+
+Testing that the readme on nuget will be auto updated
