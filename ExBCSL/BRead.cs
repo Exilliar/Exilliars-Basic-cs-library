@@ -2,7 +2,7 @@
 
 namespace ExBCSL
 {
-    public class Read
+    public class BRead
     {
         public static string getString(string msg)
         {

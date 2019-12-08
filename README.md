@@ -2,11 +2,11 @@
 Exilliar's basic c# library containing some basic methods that are regularly used in simple projects
 
 # NuGet commands
-To test run:  
+To test use command:  
 `dotnet test ExBCSL.testing/ExBCSL.testing.csproj`
 
 
-After making updates make sure to update version number and run `dotnet pack` in the `/ExBCSL` file
+After making updates make sure to update version number and run `dotnet pack` in the `/ExBCSL` file (you might need to delete previous nupkg files, not sure why)
 
 
 To install the library use command `dotnet add {app-name} package ExBCSL`
