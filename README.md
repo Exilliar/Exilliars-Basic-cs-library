@@ -19,4 +19,14 @@ To push the package use command when in `ExBCSL/bin/Debug`:
 `dotnet nuget push ExBCSL.[version].nupkg -k [API key] -s https://api.nuget.org/v3/index.json`
 
 
-Testing that the readme on nuget will be auto updated
+# Methods
+## BRead.cs
+`getString(string msg)`
+    Gets a string from the command line
+
+`getInt(string msg)`
+    Gets an int from the command line
+
+## BArrays.cs
+`FillArr(string[] a0, string[] a1, int limit)`
+    Fills one array with another, up to a set limit. Takes an input of an array in order to get size. Arrays must be strings
