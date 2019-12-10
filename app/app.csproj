@@ -3,11 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RestoreSources>$(RestoreSources);/users/roryw/Documents/projects/Exilliars-Basic-cs-library/ExBCSL/bin/Debug;https://api.nuget.org/v3/index.json</RestoreSources>
+    <RestoreSources>$(RestoreSources);/Users/rory.webber/Documents/projects/Exilliars-Basic-cs-library/ExBCSL/bin/Debug;https://api.nuget.org/v3/index.json</RestoreSources>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExBCSL" Version="0.0.1" />
+    <PackageReference Include="ExBCSL" Version="0.1.1" />
   </ItemGroup>
 
 </Project>
