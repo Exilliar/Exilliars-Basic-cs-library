@@ -58,7 +58,13 @@ namespace ExBCSL
             return Merge(array,middle);
         }
 
-        private static int[] Merge(int[] arr, int middle) // The actual merge sort
+        /// <summary>
+        /// The actual merge sort
+        /// </summary>
+        /// <param name="arr">The array to be sorted</param>
+        /// <param name="middle">The middle index of the array</param>
+        /// <returns></returns>
+        private static int[] Merge(int[] arr, int middle)
         {
             int[] arr1 = new int[middle];
             int[] arr2 = new int[arr.Length-middle];
