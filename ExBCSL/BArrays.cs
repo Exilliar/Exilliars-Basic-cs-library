@@ -53,11 +53,11 @@ namespace ExBCSL
             /// </summary>
             /// <param name="array">The array to be sorted</param>
             /// <returns>A sorted array</returns>
-            public static int[] BMergeSort(int[] array) // An abstraction of the merge sort, only here so that the user does not have to manually input the middle index of the array
+            public static int[] Merge(int[] array) // An abstraction of the merge sort, only here so that the user does not have to manually input the middle index of the array
             {
                 int middle = (int)Math.Floor((double)array.Length/2);
 
-                return Merge(array,middle);
+                return MergeRecursive(array,middle);
             }
 
             /// <summary>
@@ -66,7 +66,7 @@ namespace ExBCSL
             /// <param name="arr">The array to be sorted</param>
             /// <param name="middle">The middle index of the array</param>
             /// <returns></returns>
-            private static int[] Merge(int[] arr, int middle)
+            private static int[] MergeRecursive(int[] arr, int middle)
             {
                 int[] arr1 = new int[middle];
                 int[] arr2 = new int[arr.Length-middle];
@@ -84,9 +84,9 @@ namespace ExBCSL
                 }
 
                 if (arr1.Length == 1 && arr2.Length == 1) return CombineArr(arr1, arr2);
-                else if (arr1.Length != 1 && arr2.Length == 1) return CombineArr(Merge(arr1,arr1Mid),arr2);
-                else if (arr1.Length == 1 && arr2.Length != 1) return CombineArr(arr1,Merge(arr2,arr2Mid));
-                else return CombineArr(Merge(arr1,arr1Mid), Merge(arr2,arr2Mid));
+                else if (arr1.Length != 1 && arr2.Length == 1) return CombineArr(MergeRecursive(arr1,arr1Mid),arr2);
+                else if (arr1.Length == 1 && arr2.Length != 1) return CombineArr(arr1,MergeRecursive(arr2,arr2Mid));
+                else return CombineArr(MergeRecursive(arr1,arr1Mid), MergeRecursive(arr2,arr2Mid));
             }
 
             /// <summary>
