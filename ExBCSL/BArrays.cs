@@ -49,7 +49,7 @@ namespace ExBCSL
             }
 
             /// <summary>
-            /// A basic merge sort NEEDS TESTING
+            /// A basic merge sort. Orders from lowest to highest NEEDS TESTING
             /// </summary>
             /// <param name="array">The array to be sorted</param>
             /// <returns>A sorted array</returns>

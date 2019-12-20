@@ -21,18 +21,26 @@ namespace app
 
         static void testArrays()
         {
-            int[] arr = new int[]{1,5,3,2,6,3,2};
+            int[] arrBubble = new int[]{1,5,3,2,6,3,2};
 
-            arr = BArrays.BSort.Bubble(arr);
+            arrBubble = BArrays.BSort.Bubble(arrBubble);
 
-            printArr(arr);
+            Console.WriteLine("bubble");
+            printArr(arrBubble);
+
+            int[] arrMerge = new int[]{1,5,3,2,6,3,2};
+
+            arrMerge = BArrays.BSort.Merge(arrMerge);
+
+            Console.WriteLine("Merge");
+            printArr(arrMerge);
         }
 
         static void printArr(int[] arr)
         {
             foreach(int i in arr)
             {
-                Console.Write(i);
+                Console.Write($"{i} ");
             }
 
             Console.WriteLine();
